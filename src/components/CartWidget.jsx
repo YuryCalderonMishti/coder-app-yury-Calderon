@@ -1,9 +1,14 @@
-const CartWidget = ({counter}) => {
+import { BsCart4 } from "react-icons/bs"
+import { Badge } from "react-bootstrap"
+
+const CartWidget = () => {
     
     return(
-        <div className="cartWidgetContainer">
-            <img src="./carrito-de-compras.png" alt="cart" className="cartIcon" />
-            <p className="cartCounter">{counter}</p>
+        <div>
+            <Badge bg="dark">15</Badge>
+            <BsCart4 fontSize={'2rem'} color="violet"/>
+            
+            
         </div>
     )
 }
